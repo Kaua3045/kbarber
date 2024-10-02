@@ -1,13 +1,8 @@
+# KBarber
 
-# Ecommerce Auth Server Microservice
+Projeto utilizado para cadastrar clientes e barbeiros, gerenciar marcações de horário dos clientes entre outras coisas.
 
-Um microserviço construido para gerenciar as roles e autenticação dos usuários,
-usando oauth2.
-
-[![codecov](https://codecov.io/gh/kecommerce-microservices/ecommerce-customer-ms/branch/develop/graph/badge.svg?token=Suo3KSpMBW)](https://codecov.io/gh/kecommerce-microservices/ecommerce-customer-ms)
-[![CI Pipeline for Push to Develop](https://github.com/kecommerce-microservices/ecommerce-customer-ms/actions/workflows/ci-push-develop.yml/badge.svg?branch=develop)](https://github.com/kecommerce-microservices/ecommerce-customer-ms/actions/workflows/ci-push-develop.yml)
-[![CI/CD Pipeline for Push to Main](https://github.com/kecommerce-microservices/ecommerce-customer-ms/actions/workflows/ci-cd-push-main.yml/badge.svg?branch=main)](https://github.com/kecommerce-microservices/ecommerce-customer-ms/actions/workflows/ci-cd-push-main.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kecommerce-microservices_ecommerce-customer-ms&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=kecommerce-microservices_ecommerce-customer-ms)
+[![CI Pipeline for Push to Develop](https://github.com/Kaua3045/kbarber/actions/workflows/ci-push-develop.yml/badge.svg?branch=develop)](https://github.com/kaua3045/kbarber/actions/workflows/ci-push-develop.yml)
 
 # Índice
 
@@ -24,7 +19,7 @@ usando oauth2.
 - Tecnologias Utilizadas:
   - Java
   - Spring
-  - PostgreSQL
+  - MySQL
   - Flyway
   - docker
   - Swagger
@@ -38,17 +33,17 @@ usando oauth2.
 ## Instalação
 
 - Pré-requisitos:
-    - Java JDK 17 ou superior.
+    - Java JDK 21 ou superior.
     - Docker com docker-compose
 
 - Clone o projeto
 ```bash
-  git clone https://github.com/kecommerce-microservices/ecommerce-customer-ms.git
+  git clone https://github.com/kaua3045/kbarber.git
 ```
 
 - Entre no diretório do projeto
 ```bash
-  cd ecommerce-customer-ms
+  cd kbarber
 ```
 
 - Agora abra esse projeto em alguma idea ou então Instale as dependências
