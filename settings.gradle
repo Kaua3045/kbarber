@@ -1,0 +1,4 @@
+rootProject.name = 'kbarber'
+include 'domain'
+include 'infrastructure'
+
