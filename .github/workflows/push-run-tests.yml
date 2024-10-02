@@ -1,0 +1,30 @@
+name: Run tests on push
+
+on:
+  push:
+    branches:
+      - feature/*
+      - bugfix/*
+      - hotfix/*
+      - refactor/*
+      - fix/*
+      - docs/*
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    name: Run tests on push to code branches
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'temurin'
+
+      - name: Execute application tests
+        run: ./gradlew test
